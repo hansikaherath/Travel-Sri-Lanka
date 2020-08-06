@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+
+header{
+    background-color: #f808bc;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    font-family: century  Gothic;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: 2px solid #000;
+    transition: 0.6;
+   
+    display: block;
+    background-color:#f808bc;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li .active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 220px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: black;
+    font-size: 100px;
+}
+.button{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+#btn{
+    border: 3px solid  rgb(234, 233, 240);
+    padding: 10px 50px;
+    color:rgb(248, 242, 247);
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+#btn:hover{
+    background-color: rgb(79, 83, 83);
+    color: #000;
+}
+.gallery{
+    width: 100%;
+    padding: 72px 0px 72px 0px;
+    background-color: rgb(128, 122, 122);
+    background-size: cover;
+    clear: both;
+    float: left;
+}
+
+
+.gallery .column01{
+    width: 90%;
+    float: left;
+    padding: 0 10px;
+   margin-top: 60px;
+   margin-left: 90px;
+}
+
+.gallery .column01 .textbox {
+    padding: 2%;
+    background-color: rgb(167, 163, 163);
+    width: 90%;
+    text-align: center;
+}
+.gallery .column01 .textbox h4{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 23px;
+    letter-spacing: 0.4px;
+}
+#contact{
+    box-sizing: border-box;
+    background: linear-gradient(to right, #6d6264 0%, #696264 100%);
+    font-size: 14px;
+    height: 1000px;
+}
+
+ button,input{
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.4;
+}
+.titlecontact{
+    position: absolute;
+    top: 600px;
+    left: 26%;
+    transform: translate(-50%,-50%);
+}
+.titlecontact h1{
+    color: black;
+    font-size: 100px;
+}
+.background{
+    display: block;
+    min-height: 10;
+}
+.container{
+    flex: 0 5 750px;
+   margin-top: auto;
+    padding:150px;
+    background-color: rgb(245, 1, 164);
+}
+.screen{
+    position: absolute;
+    background-color: #3e3e3e;
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+.screen::after{
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.screenheader{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4d4d4f;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.screenheader-left{
+    margin-right: auto;
+}
+.screenheader-button{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    border-color: #fff;
+}
+.screenheader-button.close{
+    background-color: #ed1c6f;
+}
+.screenheader-button.maximum{
+    background-color: #e8e925;
+}
+.screenheader-button.minimize{
+    background-color: #74c54f;
+}
+.screenheader-ellipsis{
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background-color: #999;
+}
+.screenbody{
+    display: flex;
+}
+.screenbody-item{
+    flex: 1;
+    padding: 50px;
+}
+.screenbody-item.left{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.apptitle{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ea1d6f;
+    font-size: 26px;
+}
+.apptitle::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background-color: #ea1d6f;
+}
+.appcontact{
+    margin-top: 15px;
+    font-size: 11px;
+    color: ghostwhite;
+
+}
+.appform-group{
+    margin-bottom: 15px;
+}
+.appform-group.message{
+    margin-bottom: 40px;
+}
+.appform-group.buttons{
+    margin-bottom: 0px;
+    text-align: right;
+}
+.appform-control{
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+
+}
+
+.appform-button{
+    background-color: transparent;
+    border: none;
+    color: thistle;
+font-size: 14px;
+cursor: pointer;
+outline: none;
+}
+.appform-button :hover{
+    color:#b9134f;
+}
+@media screen and( max-width: 520px){
+    .screenbody{
+        flex-direction: column;
+    }
+    .screenbody-item.left{
+        margin-bottom: 30px;
+    }
+    .apptitle{
+        flex-direction: row;
+    }
+    .apptitle span{
+        margin-right: 12px;
+    }
+}
+@media screen and (max-width:600px){
+    .screenbody{
+        padding: 40px;
+    }
+    .screenbody-item{
+        padding: 0;
+    }
+}
+.footer{
+    width: 100%;
+    background: #00121b;
+    display: block;
+}
+.innerfooter{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: center ;
+}
+.footeritem{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.footeritem h1{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footeritem p{
+    color: lightsteelblue;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.footeritem h2{
+    margin: 10px 0;
+    font-size: 16px;
+    color: rgb(167, 163, 163);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.border{
+    height: 2px;
+    width: 4opx;
+    background: #ff9800;
+}
+.footeritem ul li{
+    color: honeydew;
+}
